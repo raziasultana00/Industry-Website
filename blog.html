@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sailor</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<style>
+			.floating-btn{
+				background-color: red;
+				color: #fff;
+				position: fixed;
+				padding: 5px;
+				bottom: 30px;
+				right: 30px;
+				border: none;
+			}
+			.btn-outline-danger{
+				border: 1px solid gray;
+				color: gray;
+			}
+			.nav-link.active{
+				color: red;
+				font-weight: bold;
+			}
+			.tags button:hover{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			.icon i:hover{
+				color: red;
+			}
+			.list:hover{
+			color:red;
+			}
+		</style>
+	</head>
+
+	<body>
+			<!-- Floating-btn Start -->
+		<a class="floating-btn" href="#">
+			<i class="bi bi-arrow-up-short h3"></i>
+		</a>
+			<!-- Floating-btn End -->
+
+			<!--Navbae Start-->
+		<nav class="navbar navbar-expand-lg pt-3 pb-3 fixed-top bg-body-tertiary">
+			<div class="container">
+				<a class="navbar-brand fw-bolder" href="#"><h4><b>SAILOR</b></h4></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse show" id="navbarSupportedContent">
+				  <ul class="navbar-nav gap-4  ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					  <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<a class="nav-link pe-3" href="about.html" role="button" 	data-bs-toggle="dropdown" aria-expanded="false"> About <i class="bi bi-caret-down-fill text-secondary"></i> </a>
+					  	<ul class="dropdown-menu border-0 bg-white">
+		               		<li><a class="dropdown-item" href="about.html">About</a></li>
+		                	<li><a class="dropdown-item" href="#">Team</a></li>
+		                	<li><a class="dropdown-item" href="#">Testimonial</a></li>
+		                	<li><a class="dropdown-item" href="#">Deep Dropdown</a></li>
+		              	</ul>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="service.html">Service</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="pricing.html">Pricing</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link active text-danger" aria-current="page" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="btn btn-danger">Get Started</a>
+					</li>
+				</ul>
+			</div>
+		  </div>
+		</nav>
+			<!--Navber End-->		
+			
+			<!--Blog tab Start-->
+		<div class="container-fluid  pt-3 mt-5  ">
+			<div class="row py-3">
+				<div class="col-6 bg-dark-subtle py-3">
+					<div class="ms-5 ps-5">
+						<h3 class="text-secondary">Blog</h3>
+					</div>
+				</div>
+				<div class="col-6 bg-dark-subtle py-3">
+					<div class=" d-flex align-items-center justify-content-end me-5 pe-5">
+						<p class="text-secondary"><a class="text-decoration-none text-danger" href="index.html">Home</a>/Blog</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!--Blog Tab End-->
+
+			<!--Blog Content Start-->
+		<div class="container">
+			<div class="row">
+
+				<!-- Col-lg-8 Start-->
+				<div class="col-lg-8">
+					
+					<!--Blog (Part-1) Start-->
+					<div>
+						<img class="w-100" src="image/blog-1.jpg" alt="Blog-1"/>
+						<div class="card shadow border-0 mb-3">
+							<div class="card-body p-4">
+								<h1 class="text-secondary">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h1>
+								<div class="d-flex text-secondary">
+									<div class="">
+										<p class="px-2"><i class="bi bi-person h5 pe-2"></i></i>John Doe</p>
+									</div>
+									<div class="px-2">
+										<p class=""><i class="bi bi-clock h6 pe-2"></i></i>Jan 1, 2022</p>
+									</div>
+									<div class="px-2">
+										<p class=""><i class="bi bi-chat-right-dots pe-2"></i></i>12 Comments</p>
+									</div>
+								</div>
+								<p>Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.</p>
+								<p>Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.</p>
+								<div class="dropdown">
+									<a class=" text-decoration-none bg-danger text-light px-3 py-2" href="#" id="read more" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Read More</a>
+		             				<ul class="dropdown-menu pe-3">
+										<div class="container">
+											<div class="bg-body-tertiary text-centernpy-4 px-5" style="border-left: 5px solid red;">
+												<h4 class="p-5 ">Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.</h4>
+											</div>
+											<div class="text-secondary">
+												<p>Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.</p>
+												<h3>Et quae iure vel ut odit alias.</h3>
+												<p>Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea. Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.</p>
+											</div>
+											<div>
+												<img class="" src="image/blog-inside-post.jpg" alt="blog-inside-post"/>
+												<div class="text-secondary pb-5" style="border-bottom: 2px solid gray;">
+													<h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
+													<p>Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.</p>
+													<p>Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.</p>
+												</div>
+											</div>
+											<div class="d-flex pt-3 text-secondary">
+												<div class="pe-5">
+													<p><i class="bi bi-folder2 pe-2"></i>Business</p>
+												</div>
+												<div>
+													<p><i class="bi bi-tag pe-2"></i>Creative,Tips,Marketing</p>
+												</div>
+											</div>
+											<div class="py-3 text-end">
+												<a class="text-decoration-none position-end bg-danger text-light px-3 py-2" href="#read more">More Less</a>
+											</div>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Blog (Part-1) End-->
+
+					<!--Blog (Part-2) Start-->
+					<div>
+						<img class="w-100" src="image/blog-2.jpg" alt="Blog-1"/>
+						<div class="card shadow border-0 mb-3">
+							<div class="card-body p-4">
+								<h1 class="text-secondary">Nisi magni odit consequatur autem nulla dolorem</h1>
+								<div class="d-flex text-secondary">
+									<div class="">
+										<p class="px-2"><i class="bi bi-person h5 pe-2"></i></i>John Doe</p>
+									</div>
+									<div class="px-2">
+										<p class=""><i class="bi bi-clock  pe-2"></i></i>Jan 1, 2022</p>
+									</div>
+									<div class="px-2">
+										<p class=""><i class="bi bi-chat-right-dots  pe-2"></i></i>12 Comments</p>
+									</div>
+								</div>
+								<p>Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.</p>
+								<p>Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.</p>
+								<div class="dropdown">
+									<a class=" text-decoration-none text-end bg-danger text-light px-3 py-2" href="#" id="read-more" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Read More</a>
+		             				<ul class="dropdown-menu pe-3">
+										<div class="container">
+											<div class="bg-body-tertiary text-centernpy-4 px-5" style="border-left: 5px solid red;">
+												<h4 class="p-5 ">Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.</h4>
+											</div>
+											<div class="text-secondary">
+												<p>Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.</p>
+												<h3>Et quae iure vel ut odit alias.</h3>
+												<p>Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea. Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.</p>
+											</div>
+											<div>
+												<img class="" src="image/blog-inside-post.jpg" alt="blog-inside-post"/>
+												<div class="text-secondary pb-5" style="border-bottom: 2px solid gray;">
+													<h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
+													<p>Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.</p>
+													<p>Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.</p>
+												</div>
+											</div>
+											<div class="d-flex pt-3 text-secondary">
+												<div class="pe-5">
+													<p><i class="bi bi-folder2 pe-2"></i>Business</p>
+												</div>
+
+												<div>
+													<p><i class="bi bi-tag pe-2"></i>Creative,Tips,Marketing</p>
+												</div>
+											</div>
+											<div class="py-3 align-items-end">
+												<div class="text-end">
+													<a class="text-decoration-none position-end bg-danger text-light px-3 py-2" href="#read-more">More Less</a>
+												</div>
+											</div>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Blog (Part-2) End-->
+				</div>
+				<!-- Col-lg-8 End-->
+
+				<!-- Col-lg-4 Start-->
+				<div class="col-lg-4">
+            		<div class="blog-sector-2 p-4">
+                		<h4 class="text-secondary">Search</h4>
+							<div class="d-flex">
+								<div class="">
+									<input class="form-control rounded-0 p-1"
+									type="search" name="search"/>
+								</div>
+								<div class="pt-1">
+									<i class="bi bi-search bg-danger text-light px-3 py-2 "></i>
+								</div>
+							</div>
+		                <div class="category-section">
+							<h4 class="pt-4 pb-3 text-secondary">Categories</h4>
+							<ul class="list-unstyled">
+								<li class="mb-2"><a href="#" class="text-decoration-none text-secondary">General (25)</a></li>
+								<li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Lifestyle (12)</a></li>
+								<li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Travel (12)</a></li>
+								<li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Design (5)</a></li>
+								<li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Creative (8)</a></li>
+								<li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Educaion (14)</a></li>
+							</ul>
+		                </div>
+						<!--Recent Post Start-->
+		                <div class="container">
+							<h4 class="pt-4 pb-3 text-secondary fw-semibold">Recent Posts</h4>
+							<div class="row">
+								<div class=" d-flex">
+									<img src="image/blog-recent-1.jpg" class="w-50" alt="blog"/>
+									<div class="ps-3">
+										<h5 class="fs-6 "><a href="#" class="text-decoration-none text-dark">Nihil blanditiis at in nihil autem</a></h5>
+										<p class="text-secondary fst-italic text-secondary">Jan 1, 2020</p>
+									</div>
+								</div>
+								<div class="d-flex mt-3">
+									<img src="image/blog-recent-2.jpg" class="w-50" alt="blog"/>
+									<div class="ps-3">
+										<h5 class="fs-6"><a href="#" class="text-decoration-none text-dark">Quidem autem et impedit</a></h5>
+										<p class="text-secondary fst-italic text-secondary">Jan 1, 2020</p>
+									</div>
+								</div>
+								<div class="d-flex mt-3">
+									<img src="image/blog-recent-3.jpg" class="w-50" alt="blog"/>
+									<div class="ps-3">
+										<h5 class="fs-6"><a href="#" class="text-decoration-none text-dark">Id quia et et ut maxime similique occaecati ut</a></h5>
+										<p class="text-secondary fst-italic text-secondary">Jan 1, 2020</p>
+									</div>
+								</div>
+								<div class="d-flex mt-3">
+									<img src="image/blog-recent-4.jpg" class="w-50" alt="blog"/>
+									<div class="ps-3">
+										<h5 class="fs-6 "><a href="#" class="text-decoration-none text-dark">Laborum corporis quo dara net para</a></h5>
+										<p class="text-secondary fst-italic text-secondary">Jan 1, 2020</p>
+									</div>
+								</div>
+								<div class="d-flex mt-3">
+									<img src="image/blog-recent-5.jpg" class="w-50" alt="blog"/>
+									<div class="ps-3">
+										<h5 class="fs-6"><a href="#" class="text-decoration-none text-dark">Et dolores corrupti quae illo quod dolor</a></h5>
+										<p class="text-secondary fst-italic text-secondary">Jan 1, 2020</p>
+									</div>
+								</div>
+							</div>
+		                  <div class="tag-section">
+		                    <h4 class="pt-4 pb-3 text-secondary fw-semibold">Tags</h4>
+		                    <div class="tags">
+								<button class="btn btn-outline-danger">App</button>
+								<button class="btn btn-outline-danger">IT</button>
+								<button class="btn btn-outline-danger">Business</button>
+								<button class="btn btn-outline-danger">Mac</button>
+								<button class="btn btn-outline-danger">Design</button>
+								<button class="btn btn-outline-danger my-2">Office</button>
+								<button class="btn btn-outline-danger">Creative</button>
+								<button class="btn btn-outline-danger">Studio</button>
+								<button class="btn btn-outline-danger">Smart</button>
+								<button class="btn btn-outline-danger">Tips</button>
+								<button class="btn btn-outline-danger">Marketing</button>
+		                    </div>
+		                  </div>
+		                </div>
+						<!--Recent Post End-->
+		            </div>
+				</div>
+				<!-- Col-lg-4 End-->
+			</div>
+		</div>
+			<!--Blog Content End-->
+
+			<!-- Footer Start-->
+		<footer class="bg-dark text-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 py-5">
+						<div>
+							<h4><a class="text-light text-decoration-none" href="#">Sailor</a></h4>
+						</div>
+						<div class="mt-4">
+							<p class="m-0">A108 Adam Street</p>
+							<p>New York, NY 535022</p>
+						</div>
+						<div class="mt-2">
+							<p class="m-0">Phone: +1 5589 55488 55</p>
+							<p>Phone: +1 5589 55488 55</p>
+						</div>
+						<div class="icon pt-3 mb-0 pb-3 text-secondary">
+							<a class="text-secondary text-decoration-none" href="#">
+								<i class="bi bi-twitter-x fs-5 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+								<i class="bi bi-facebook fs-5 m-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+								<i class="bi bi-camera fs-5 me-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+								<i class="bi bi-linkedin fs-5 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+							</a>
+						</div>
+					</div>				
+					<div class="col-lg-2 py-5">
+						<h5 class="pb-3">Useful Links</h5>
+						<ul class="list-unstyled text-secondary m-2">
+							<a class="text-secondary text-decoration-none" href="#">
+								<li class="list py-2 m-0 text-tertiary">Home</li>
+								<li class="list py-2 m-0 text-tertiary">About us</li>
+								<li class="list py-2 m-0 text-tertiary">Services</li>
+								<li class="list py-2 m-0 text-tertiary">Terms of service</li>
+								<li class="list py-2 m-0 text-tertiary">Privacy policy</li>
+							</a>
+						</ul>
+					</div>
+					<div class="col-lg-2 py-5">
+						<h5 class="pb-3"> Our Services</h5>
+						<ul class="list-unstyled text-secondary">
+							<a class="text-secondary text-decoration-none" href="#">
+								<li class="list py-2 m-0 text-tertiary">Web Design</li>
+								<li class="list py-2 m-0 text-tertiary">Web Development</li>
+								<li class="list py-2 m-0 text-tertiary">Product Management</li>
+								<li class="list py-2 m-0 text-tertiary">Marketing</li>
+								<li class="list py-2 m-0 text-tertiary">Graphic Design</li>
+							</a>
+						</ul>
+					</div>
+					<div class="col-lg-4 py-5">
+						<h5 class="">Our Newsletter</h5>
+						<p class="py-3" >Subscribe to our newsletter and receive the latest news about our products and services!</p>
+						<div class="input-group mb-3 ">
+							<input type="search" class="form-control bg-dark border-danger text-light" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<span class="input-group-text border-danger bg-danger" id="basic-addon2">Subscribe</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="text-center pt-3 pb-2" style="border-top: 1px solid gray">
+					<p class="">© Copyright Sailor All Rights Reserved</p>
+					<p>Design By<a class="ps-2 text-decoration-none text-danger fw-bolder" href="#">Razia Sultana</a></p>
+				</div>
+			</div>
+		</footer>
+			<!--Footer End-->
+				
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

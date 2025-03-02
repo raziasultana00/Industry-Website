@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sailor</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<style>
+			.floating-btn{
+				background-color: red;
+				color: #fff;
+				position: fixed;
+				padding: 5px;
+				bottom: 30px;
+				right: 30px;
+				border: none;
+			}
+			.card{
+				border: none;
+			}
+			.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+				border-bottom: 3px solid red;
+				color: red;
+			}
+			.nav-underline .nav-link{
+				border-bottom: 3px solid #fff;
+				color: #000;
+			}
+			.nav-link.active{
+				color: red;
+				font-weight: bold;
+			}
+			.nav-underline .nav-link:focus,.nav-link:hover {
+				color: #000;
+				border-bottom: #fff;
+			}
+			.icon i:hover{
+				background-color: red;
+				color: white;
+			}
+			.icon-4 i:hover{
+				color: red;
+				border: 1px solid red;
+				border-radius: 50%;
+			}
+			.list:hover{
+				color:red;
+			}
+			.company img:hover{
+				opacity: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+			<!-- Floating-btn Start -->
+		<a class="floating-btn" href="#">
+			<i class="bi bi-arrow-up-short h3"></i>
+		</a>
+			<!-- Floating-btn End -->
+
+			<!--Navbae Start-->
+		<nav class="navbar navbar-expand-lg pt-3 pb-3 fixed-top bg-body-tertiary">
+			<div class="container">
+				<a class="navbar-brand fw-bolder" href="#"><h4>SAILOR</h4></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse show" id="navbarSupportedContent">
+				  <ul class="navbar-nav gap-4  ms-auto  mb-lg-0">
+					<li class="nav-item">
+					  	<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					  	<a class="nav-link active text-danger" aria-current="page" href="about.html">About</a>
+					  	<ul class="dropdown-menu border-0 bg-white">
+		               		<li><a class="dropdown-item" href="about.html">About</a></li>
+		                	<li><a class="dropdown-item" href="#">Team</a></li>
+		                	<li><a class="dropdown-item" href="#">Testimonial</a></li>
+		                	<li><a class="dropdown-item" href="#">Deep Dropdown</a></li>
+		              	</ul>
+					</li>
+					<li class="nav-item">
+					  	<a class="nav-link" href="service.html">Service</a>
+					</li>
+					<li class="nav-item">
+					  	<a class="nav-link" href="portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-item">
+					  	<a class="nav-link" href="pricing.html">Pricing</a>
+					</li>
+					<li class="nav-item">
+					  	<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+					  	<a class="nav-link">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html" class="btn btn-danger" href="contact.html">Get Started</a>
+					</li>
+				</ul>
+			</div>
+		  </div>
+		</nav>
+			<!--Navber End-->
+					
+			<!--About tab Start-->
+		<div class="container-fluid pt-3 mt-5">
+			<div class="row py-3">
+				<div class="col-6 bg-dark-subtle py-3">
+					<div class="ms-5 ps-5">
+						<h3 class="text-secondary">About</h3>
+					</div>
+				</div>
+				<div class="col-6 bg-dark-subtle py-3">
+					<div class=" d-flex align-items-center justify-content-end me-5 pe-5">
+						<p class="text-secondary"><a class="text-decoration-none text-danger" href="index.html">Home</a>/About</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!--About Tab End-->	
+
+			<!-- container Start -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+					<div class="mb-0">
+						<img  class="m-4 pt-4" style="width: 450px; height: 530px;" src="image/abt.jpeg" alt="about image"/>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-12 mt-4 px-5">
+					<div class="mx-5 py-5">
+						<p class="text-secondary fs-3">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</p>
+							<nav style="border-bottom: 1px solid lightgray;">
+								<div class="nav nav-underline" id="nav-tab" aria-current="page" role="tablist">
+									<a class="nav-link active fs-5" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Saepe Fuga</a>
+									<a class="nav-link fs-5" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Voluptates</a>
+									<a class="nav-link fs-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Corrupti</a>
+								</div>
+							</nav>
+						<div class="tab-content pt-2" id="nav-tabContent">
+							<div class="tab-pane  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+								<h6 class="text-secondary">
+									Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.
+								</h6>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Repudiandae rerum velit modi et officia quasi facilis</h4>
+										<p class="text-secondary">
+											Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Incidunt non veritatis illum ea ut nisi</h4>
+										<p class="text-secondary">
+											Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Omnis ab quia nemo dignissimos rem eum quos.</h4>
+										<p class="text-secondary">
+											Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Repudiandae rerum velit modi et officia quasi facilis</h4>
+										<p class="text-secondary">
+											Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Incidunt non veritatis illum ea ut nisi</h4>
+										<p class="text-secondary">
+											Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Omnis ab quia nemo dignissimos rem eum quos.</h4>
+										<p class="text-secondary">
+											Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+								<h6 class="text-secondary">
+									Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.ss
+								</h6>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Repudiandae rerum velit modi et officia quasi facilis</h4>
+										<p class="text-secondary">
+											Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Incidunt non veritatis illum ea ut nisi</h4>
+										<p class="text-secondary">
+											Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div classs="card-body">
+										<h4 class=""> <i class="bi bi-check-lg text-danger"></i> Omnis ab quia nemo dignissimos rem eum quos.</h4>
+										<p class="text-secondary">
+											Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- container End -->
+
+			<!--  -->
+		<div class="container-fluid bg-body-secondary">
+			<div class="row">
+				<div class="col-lg-3 text-center py-3">
+					<h1 class="m-0">232</h1>
+					<p class="text-danger m-0 p-0">
+					___</p>
+					<p class="text-secondary m-0">Client</p>
+				</div>
+				<div class="col-lg-3 text-center py-3">
+					<h1 class="m-0 p-0">521</h1>
+					<p class="text-danger m-0 p-0">
+					___</p>
+					<p class="text-secondary m-0 p-0">Project</p>
+				</div>
+				<div class="col-lg-3 text-center py-3">
+					<h1 class="m-0 p-0">1453</h1>
+					<p class="text-danger m-0 p-0">
+					___</p>
+					<p class="text-secondary">Hours Of Support</p>
+				</div>
+				<div class="col-lg-3 text-center py-3">
+					<h1 class="m-0 p-0">32</h1>
+					<p class="text-danger m-0 p-0">
+					___</p>
+					<p class="text-secondary m-0 p-0">Workers</p>
+				</div>				
+			</div>
+		</div>
+			<!--  -->
+
+			<!--Card Start-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="card mb-2 shadow">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-4">
+									<img class="w-100 h-100" src="image/team-1.jpg" alt="team-1"/>
+								</div>
+								<div class="col-lg-8">
+									<h3 class="text-secondary">Walter White</h3>
+									<p>Chief Executive Officer</p>
+									<p class="text-secondary">_____</p>
+									<p class="text-secondary">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+									<div class="icon text-secondary">
+										<a class="text-secondary text-decoration-none" href="#">
+											<i class="bi bi-twitter-x h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-facebook h4 m-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-camera h4 me-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-linkedin h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card shadow">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-4">
+									<img class="w-100 h-100" src="image/team-3.jpg" alt="team-3"/>
+								</div>
+								<div class="col-lg-8">
+									<h3 class="text-secondary">William Anderson</h3>
+									<p>CTO</p>
+									<p class="text-secondary">_____</p>
+									<p class="text-secondary">Quisquam facilis cum velit laborum corrupti fuga rerum quia </p>
+									<div class="icon text-secondary">
+										<a class="text-secondary text-decoration-none" href="#">
+											<i class="bi bi-twitter-x h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-facebook h4 m-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-camera h4 me-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-linkedin h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="card mb-2 shadow">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-4">
+									<img class="w-100 h-100" src="image/team-2.jpg" alt="team-3"/>
+								</div>
+								<div class="col-lg-8">
+									<h3 class="text-secondary">Sarah Jhonson</h3>
+									<p>Product Manager</p>
+									<p class="text-secondary">_____</p>
+									<p class="text-secondary">Aut maiores votuptates amet et quis praesentium qui senda para</p>
+									<div class="icon text-secondary">
+										<a class="text-secondary text-decoration-none" href="#">
+											<i class="bi bi-twitter-x h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-facebook h4 m-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-camera h4 me-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-linkedin h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card shadow">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-4">
+									<img class="w-100 h-100" src="image/team-4.jpg" alt="team-3"/>
+								</div>
+								<div class="col-lg-8">
+									<h3 class="text-secondary p-0">Amanda Jepson</h3>
+									<p>Accountant</p>
+									<p class="text-secondary p-0">_____</p>
+									<p class="text-secondary">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+									<div class="icon text-secondary">
+										<a class="text-secondary text-decoration-none" href="#">
+											<i class="bi bi-twitter-x h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-facebook h4 m-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-camera h4 me-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+											<i class="bi bi-linkedin h4 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!--Card End-->
+
+			<!--Skills Start-->
+		<div class="container">
+			<div class="d-flex mt-5">
+				<div class="my-2"><h6 class="text-secondary">Skills</h6></div>
+				<div class=""><p class="text-danger ps-2">________</p></div>
+			</div>
+			<div>
+				<h4 class="fw-bolder">Check Our Skills</h4>
+			</div>
+		</div>
+			<!--Skills End-->
+
+			<!--Skills items Start-->
+		<div class="container my-5">
+			<div class="row">
+				<!--Left Site Skills Star-->
+				<div class="col-lg-6">
+					<div class="row py-2">
+						<div class="col-md-6">
+							<p class="m-0 p-0">HTML</p>
+						</div>
+						<div class="col-md-6">
+							<div class="d-flex align-items-center justify-content-end">
+								<p class="m-0 p-0">100%</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class=" ">
+							<pre class="bg-danger">			</pre>				
+						</div>
+					</div>
+					<!--HTML End-->
+
+					<!--CSS Start-->
+					<div class="row py-2">
+						<div class="col-md-6">
+							<p class="m-0 p-0">CSS</p>
+						</div>
+						<div class="col-md-6">
+							<div class="d-flex align-items-center justify-content-end">
+								<p class="m-0 p-0">90%</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 bg-body-secondary">
+						<div class="col-md-11 bg-danger">
+							<pre class="">			</pre>				
+						</div>
+					</div>
+					<!--CSS End-->
+
+					<!--JavaScript Start-->
+					<div class="row py-2">
+						<div class="col-md-6">
+							<p class="m-0 p-0">JavaScript</p>
+						</div>
+						<div class="col-md-6">
+							<div class="d-flex align-items-center justify-content-end">
+								<p class="m-0 p-0">75%</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 bg-body-secondary mb-5">
+						<div class="col-md-8 bg-danger">
+							<pre class="">			</pre>				
+						</div>
+					</div>
+					<!--JavaScript End-->
+				</div>
+				<!--Left Site Skills  End-->
+
+				<!--Right items Start-->
+				<div class="col-lg-6">
+
+					<!--PHP Start-->
+					<div class="row py-2">
+						<div class="col-md-6">
+							<p class="m-0 p-0">PHP</p>
+						</div>
+						<div class="col-md-6">
+							<div class="d-flex align-items-center justify-content-end">
+								<p class="m-0 p-0">80%</p>
+							</div>
+						</div>
+					</div>
+					<div class="progress rounded-0 mb-3" role="progressbar" aria-label="Example 22px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 22px">
+ 						 <div class="progress-bar bg-danger" style="width: 80%"></div>
+					</div>
+					<!--PHP End-->
+
+					<!--WordPress/CSS Start-->
+					<div class="row py-2">
+						<div class="col-md-6">
+							<p class="m-0 p-0">WordPress/CSS</p>
+						</div>
+						<div class="col-md-6">
+							<div class="d-flex align-items-center justify-content-end">
+								<p class="m-0 p-0">90%</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="progress rounded-0 mb-3" role="progressbar" aria-label="Example 22px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 22px">
+ 						 <div class="progress-bar bg-danger" style="width: 90%"></div>
+					</div>
+					<!--WordPress/CSS End-->
+
+					<!--Photoshop Start-->
+					<div class="row py-2">
+						<div class="col-md-6">
+							<p class="m-0 p-0">Photoshop</p>
+						</div>
+						<div class="col-md-6">
+							<div class="d-flex align-items-center justify-content-end">
+								<p class="m-0 p-0">55%</p>
+							</div>
+						</div>
+					</div>
+					<div class="progress rounded-0" role="progressbar" aria-label="Example 22px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 22px">
+ 						 <div class="progress-bar bg-danger" style="width: 55%"></div>
+					</div>
+					<!--Photoshop End-->
+				</div>
+			</div>
+		</div>
+			<!--Skills items End-->
+
+
+
+		<!-- Footer Start-->
+		<footer class="bg-dark text-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 py-5">
+						<div>
+							<h4><a class="text-light text-decoration-none" href="#">Sailor</a></h4>
+						</div>
+						<div class="mt-4">
+							<p class="m-0">A108 Adam Street</p>
+							<p>New York, NY 535022</p>
+						</div>
+						<div class="mt-2">
+							<p class="m-0">Phone: +1 5589 55488 55</p>
+							<p>Phone: +1 5589 55488 55</p>
+						</div>
+						<div class="icon-4 pt-3 mb-0 pb-3 text-secondary">
+							<a class="text-secondary text-decoration-none" href="#">
+								<i class="bi bi-twitter-x fs-5 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+								<i class="bi bi-facebook fs-5 m-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+								<i class="bi bi-camera fs-5 me-2 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+								<i class="bi bi-linkedin fs-5 p-2" style="border: 1px solid lightgray; border-radius: 50%;"></i>
+							</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 py-5">
+						<h5 class="pb-3">Useful Links</h5>
+						<ul class="list-unstyled text-secondary m-2">
+							<a class="text-secondary text-decoration-none" href="#">
+								<li class="list py-2 m-0 text-tertiary">Home</li>
+								<li class="list py-2 m-0 text-tertiary">About us</li>
+								<li class="list py-2 m-0 text-tertiary">Services</li>
+								<li class="list py-2 m-0 text-tertiary">Terms of service</li>
+								<li class="list py-2 m-0 text-tertiary">Privacy policy</li>
+							</a>
+						</ul>
+					</div>
+					
+					<div class="col-lg-2 py-5">
+						<h5 class="pb-3"> Our Services</h5>
+						<ul class="list-unstyled text-secondary">
+							<a class="text-secondary text-decoration-none" href="#">
+								<li class="list py-2 m-0 text-tertiary">Web Design</li>
+								<li class="list py-2 m-0 text-tertiary">Web Development</li>
+								<li class="list py-2 m-0 text-tertiary">Product Management</li>
+								<li class="list py-2 m-0 text-tertiary">Marketing</li>
+								<li class="list py-2 m-0 text-tertiary">Graphic Design</li>
+							</a>
+						</ul>
+					</div>
+					
+					<div class="col-lg-4 py-5">
+						<h5 class="">Our Newsletter</h5>
+						<p class="py-3" >Subscribe to our newsletter and receive the latest news about our products and services!</p>
+						<div class="input-group mb-3 ">
+							<input type="search" class="form-control bg-dark border-danger text-light" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<span class="input-group-text border-danger bg-danger" id="basic-addon2">Subscribe</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="text-center pt-3 pb-2" style="border-top: 1px solid gray">
+					<p class="">© Copyright Sailor All Rights Reserved</p>
+					<p>Design By<a class="ps-2 text-decoration-none text-danger fw-bolder" href="#">Razia Sultana</a></p>
+				</div>
+			</div>
+		</footer>
+		<!--Footer End-->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
